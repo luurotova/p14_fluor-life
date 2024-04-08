@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fluor Life</title>
+</head>
+
+<body>
+    <style>
+        :root {
+            --magenta: magenta;
+            --cyan: cyan;
+            --yellow: yellow;
+            --green: rgb(0, 255, 0);
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'geometrica', sans-serif;
+        }
+
+        header,
+        main,
+        footer {
+            color: white;
+        }
+
+        header {
+            display: inline-flex;
+            font-size: 50px;
+            background-color: rgb(27, 27, 27);
+            width: 100vw;
+            padding: 15px;
+            font-weight: bold;
+        }
+
+        main {
+            font-size: 20px;
+            background-color: black;
+        }
+
+        footer {
+            height: 200px;
+            background-color: rgb(27, 27, 27);
+
+        }
+
+        div {
+            padding: 15px;
+        }
+
+        section {
+            height: 50px;
+            width: 100vw;
+            cursor: pointer;
+        }
+
+        main section:hover {
+            background-color: white;
+        }
+
+        section:nth-child(2) {
+            background-color: var(--cyan);
+        }
+
+        section:nth-child(4) {
+            background-color: var(--magenta);
+        }
+
+        section:last-child {
+            background-color: var(--yellow);
+        }
+
+        span:first-child:hover {
+            color: var(--magenta);
+        }
+
+        span:nth-child(2):hover {
+            color: var(--yellow);
+        }
+
+        span:nth-child(3):hover {
+            color: var(--cyan);
+        }
+        span:last-child:hover {
+            color: var(--green);
+        }
+
+        span::after {
+            content: "|";
+            padding: 10px;
+        }
+
+        p {
+            text-align: center;
+            font-size: 150px;
+        }
+    </style>
+    <header>
+        <span>be fluor</span>
+        <span>be ligtful</span>
+        <span>be cool</span>
+        <span>randomize</span>
+    </header>
+    <main>
+        <div>cyan</div>
+        <section></section>
+        <div>magenta</div>
+        <section></section>
+        <div>yellow</div>
+        <section></section>
+    </main>
+    <footer>
+        <p>...</p>
+    </footer>
+
+    <script>
+        
+    </script>
+</body>
+
+</html>
